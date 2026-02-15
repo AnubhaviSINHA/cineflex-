@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CineMood Pro - Login</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="auth-body">
+
+<div class="auth-container">
+    
+    <div class="auth-left">
+        <h1>🎬 CineMood Pro</h1>
+        <p>Smart Mood-Based Movie Recommendation Platform</p>
+    </div>
+
+    <div class="auth-right">
+        <div class="auth-box">
+
+            <h2 id="formTitle">Login</h2>
+
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            
+            <div class="show-pass">
+                <input type="checkbox" onclick="togglePassword()"> Show Password
+            </div>
+
+            <button onclick="login()">Login</button>
+
+            <p id="errorMsg"></p>
+
+            <p class="toggle-text">
+                Don't have an account?
+                <span onclick="toggleForm()">Sign Up</span>
+            </p>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

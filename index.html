@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CineMood Pro</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2 class="logo">🎬 CineMood Pro</h2>
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#recommend">Recommend</a>
+        <a href="#watchlist">Watchlist</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Find Movies Based on Your Mood</h1>
+    <p>Smart. Personalized. Time-Aware. Spoiler-Free.</p>
+    <button onclick="scrollToRecommend()">Get Started</button>
+</section>
+
+<section class="recommend-section" id="recommend">
+    <div class="filters">
+        <select id="mood">
+            <option value="">Select Mood</option>
+            <option value="happy">😄 Happy</option>
+            <option value="sad">😔 Sad</option>
+            <option value="angry">😠 Angry</option>
+            <option value="relaxed">😌 Relaxed</option>
+        </select>
+
+        <select id="duration">
+            <option value="">Available Time</option>
+            <option value="short">Under 120 min</option>
+            <option value="medium">120 - 150 min</option>
+            <option value="long">150+ min</option>
+        </select>
+
+        <button onclick="fetchMovies()">Recommend</button>
+    </div>
+
+    <div id="movies" class="movie-grid"></div>
+</section>
+
+<section class="watchlist-section" id="watchlist">
+    <h2>⭐ Your Watchlist</h2>
+    <div id="watchlistContainer"></div>
+</section>
+
+<footer>
+    <p>© 2026 CineMood Pro | Built for Innovation Event</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
